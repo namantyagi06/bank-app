@@ -1,0 +1,29 @@
+<h2>Create Account</h2>
+
+<form action="/create" method="post">
+<input name="acc" placeholder="Account No">
+<input name="name" placeholder="Name">
+<input name="bal" placeholder="Balance">
+KYC <input type="checkbox" name="kyc">
+<button>Create</button>
+</form>
+
+<hr>
+
+<h2>Transfer Money</h2>
+
+<form action="/transfer" method="post">
+<input name="sender" placeholder="Sender Acc">
+<input name="receiver" placeholder="Receiver Acc">
+<input name="amount" placeholder="Amount">
+<button>Transfer</button>
+</form>
+
+<hr>
+
+<h2>Accounts</h2>
+
+{% for a in accounts.values() %}
+<p>{{a.accountNo}} | {{a.holderName}} | {{a.balance}}</p>
+{% endfor %}
+
