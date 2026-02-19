@@ -9,6 +9,6 @@ Features:
 Tech:
 Python Flask
 
-GitHub: <repo link>
-Live URL: <render link>
+GitHub: https://github.com/namantyagi06/bank-app
+Live URL: https://bank-app-3eoz.onrender.com
 
